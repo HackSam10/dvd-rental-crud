@@ -46,18 +46,6 @@ typedef struct config_table{
 
 
 
-/**
- * @enum flag_print_placar
- * @brief enum used by the menu_print_placar function, its purpose is to
- * define whether the function will print a general scoreboard
- * listing all the players' matches, or whether the function will print
- * a scoreboard for a current matchup,
- * it does this by changing the title of the scoreboard.
- */
-typedef enum flag_print_placar{
-    GERAL, /**< print the general scoreboard. */
-    PARTIDA_ATUAL /**< prints the current match score */
-}flag_print_placar;
 
 
 /**
@@ -108,42 +96,6 @@ int menu_options(config_table config, ...);
 
 
 
-/**
- * @brief Function used to print a player ranking table.
- * 
- * This function was created for the ranking module server, it produces a table
- * interface to print the players' ranking. It has three parameters,
- * a pointer to a struct ranking array, the number of elements in this array
- * and the value that represents the current ranking of the first player present
- * in the first parameter.
- *
- * @param UserRanking - A pointer to an array of a struct of type ranking.
- * @param CountUser - The number of elements present in the ranking array.
- * @param RankUser - A value that represents the ranking of the first player
- * present in the UserRanking argument.
- *
- * @dependencies
- * - @ref ranking is defined in utils.h
- */
-void menu_print_ranking(ranking* UserRanking, int CountUser, int *RankUser);
 
-
-
-/**
- * @brief Function used to print the match score between two players.
- *
- * The function takes two arguments, the first is struct placar, which contains data
- * about the confrontation between two players, such as wins, losses,
- * draws, number of matches and identifiers. The second argument is a flag that
- * indicates whether the function will print a confrontation history
- * or the current match between the players.
- *
- * @param placar_da_partida - A pointer to the struct placar.
- * @param flag - A flag used to inform the type of scoreboard to be printed.
- *
- * @dependencies
- * - @ref placar is defined in utils.h
- */
-void menu_print_placar(placar *placar_da_partida, flag_print_placar flag);
 
 #endif
