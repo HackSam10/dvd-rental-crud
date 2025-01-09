@@ -14,7 +14,7 @@
  * @brief Function used to collect possible characters remaining in the terminal
  * buffer after a user input operation.
  */
-void LimpaTerminal(void){
+void ClearTerminal(void){
 int a;
 
 for(a = 'a'; a != 10 && a != EOF; a = getchar()){}
@@ -33,7 +33,7 @@ int char_buffer = 0;
 puts(message_utils[UTILS_NEW_CHANCE]);
 char_buffer = getchar();
 
-if(char_buffer != 10) LimpaTerminal();
+if(char_buffer != 10) ClearTerminal();
 
 if(char_buffer == 'y' || char_buffer == 'Y') return 1;
 return 0;

@@ -15,5 +15,5 @@
  * that will be used by the utils module.
  */
 const char *message_utils[UTILS_COUNT] = {
-    [UTILS_NEW_CHANCE] = "Por favor, digite (Y) para tentar novamente, ou outra tecla para retornar ao menu: "
+    [UTILS_NEW_CHANCE] = "Please press (Y) to try again, or any other key to go back: "
 };

@@ -17,5 +17,5 @@
  */
 const char *message_interface[INTERFACE_COUNT] = {
     [INTERFACE_HEADER_MENSAGEM] = "DvD Reantal Software",
-    [INTERFACE_SELECTION_USER] = "\n\nPlease select the number of the potion you wish to choose: "
+    [INTERFACE_SELECTION_USER] = "\n\nPlease select the number of the option you wish to choose: "
 };

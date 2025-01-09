@@ -1,6 +1,5 @@
 CC = gcc
 
-#CFLAGS = -c -Wall -Wextra
 CFLAGS = -c
 
 #Directories
