@@ -11,16 +11,12 @@
  * @dependencies
  * This module depends on the following modules:
  * - @ref ../include/interface.h "interface": Provides a user interface.
- * - @ref ../include/user.h "user" : Provides access to internal user operations.
- * - @ref ../include/ranking.h "ranking": Provides access to player rankings.
  */
 
 #ifndef MAIN_H
 #define MAIN_H
 
 #include "../include/interface/interface.h"
-#include "../include/user/user.h"
-#include "../include/ranking/ranking.h"
 
 /**
  * @enum type_message_main

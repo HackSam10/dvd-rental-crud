@@ -44,10 +44,10 @@ header_menu();
 
 //calling the interface module's menu_options function.
 main_pick_user pick_user = menu_options(menu_config,
-                             message_main[MAIN_OPTION_ONE],
-                             message_main[MAIN_OPTION_TWO],
-                             message_main[MAIN_OPTION_THREE],
-                             message_main[MAIN_OPTION_FOUR],
+                             message_main[MAIN_OPTION_DVD],
+                             message_main[MAIN_OPTION_USER],
+                             message_main[MAIN_OPTION_RENT_DVD],
+                             message_main[MAIN_OPTION_],
                              message_main[MAIN_OPTION_FIVE],
                              message_main[MAIN_OPTION_SIX],
                              message_main[MAIN_OPTION_SEVEN]);
