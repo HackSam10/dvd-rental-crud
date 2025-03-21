@@ -25,22 +25,11 @@
  */
 enum type_message_main{
     MAIN_TITLE, /**< Main menu title */
-    MAIN_OPTION_ONE, /**< First option to choose from the main menu */
-    MAIN_OPTION_TWO, /**< Second option to choose from the main menu */
-    MAIN_OPTION_THREE, /**< Third option to choose from the main menu */ 
-    MAIN_OPTION_FOUR, /**< Fourth option to choose from the main menu */
-    MAIN_OPTION_FIVE, /**< Fifth option to choose from the main menu */
-    MAIN_OPTION_SIX, /**< Sixth option to choose from the main menu */
-    MAIN_OPTION_SEVEN, /**< Seventh option to choose from the main menu */
-    MAIN_ERROR_LOGIN, /**< Login error message */
-    MAIN_ERROR_CREAT_USER, /**< Error message when creating user */
-    MAIN_SUCCESS_CREAT_USER, /**< Success message when creating user */
-    MAIN_ERROR_CHANGE_NAME, /**< Error message when change name */
-    MAIN_SUCCESS_CHANGE_NAME, /**< Success message when change name */
-    MAIN_ERROR_RANKING, /**< Error message when accessing the ranking */
-    MAIN_ERROR_HISTORY, /**< Error message when accessing match history */
-    MAIN_ERROR_DELETE, /**< Error message when deleting account */
-    MAIN_SUCCESS_DELETE, /**< Success message when deleting account */
+    MAIN_OPTION_DVD, /**< First option to choose from the main menu */
+    MAIN_OPTION_USER, /**< Second option to choose from the main menu */
+    MAIN_OPTION_RENT_DVD, /**< Third option to choose from the main menu */
+    MAIN_OPTION_PRINT_REPORT, /**< Fourth option to choose from the main menu */
+    MAIN_OPTION_EXIT, /**< Fiveth option to choose from the main menu */
     MAIN_DEFAULT_OPTION, /**< Default message if the user does not choose any menu option */
     MAIN_WAIT, /**< waiting message */
     MAIN_COUNT /**< Total number of messages */
@@ -52,7 +41,7 @@ enum type_message_main{
  * the menu_options function, offered by the interface module.
  */
 typedef enum main_pick_user{
-    GAME = 1, REGISTER, CHANGE_NAME, RANKING, HISTORY, DELETE, EXIT
+    DVD = 1, USER, RENT_DVD, PRINT_REPORT, EXIT
 }main_pick_user;
 
 /**

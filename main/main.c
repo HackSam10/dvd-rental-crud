@@ -28,7 +28,7 @@
 int main(void){
 
 config_table menu_config = {0};
-bool game_on = true;
+bool software_on = true;
 
 //set a menu_config for the menu_options function of the interface module.
 menu_config.table_margin = 35;
@@ -47,65 +47,47 @@ main_pick_user pick_user = menu_options(menu_config,
                              message_main[MAIN_OPTION_DVD],
                              message_main[MAIN_OPTION_USER],
                              message_main[MAIN_OPTION_RENT_DVD],
-                             message_main[MAIN_OPTION_],
-                             message_main[MAIN_OPTION_FIVE],
-                             message_main[MAIN_OPTION_SIX],
-                             message_main[MAIN_OPTION_SEVEN]);
+                             message_main[MAIN_OPTION_PRINT_REPORT],
+                             message_main[MAIN_OPTION_EXIT]);
 
 //using the return value to consume the internal modules
 switch(pick_user){
 
     
-    case GAME: {
-             if(login_user()){
-              puts(message_main[MAIN_ERROR_LOGIN]); 
-              sleep(2);
-             }
-            break;
-            }
+    case DVD: {
+                 if(true){
+                      //puts(); 
+                      sleep(2);
+                     }
+                 break;
+                }
 
-    case REGISTER: {
-            if(create_user())
-              puts(message_main[MAIN_ERROR_CREAT_USER]); 
-            else puts(message_main[MAIN_SUCCESS_CREAT_USER]);
-                sleep(2);
-            break;
-            }
+    case USER: {
+                 if(true){
+                      //puts(); 
+                      sleep(2);
+                     }
+                 break;
+                }
 
-    case CHANGE_NAME: {
-           if(change_name())
-                puts(message_main[MAIN_ERROR_CHANGE_NAME]);
-           else puts(message_main[MAIN_SUCCESS_CHANGE_NAME]);
-                sleep(2);
-            break;
-            }
+    case RENT_DVD: {
+                 if(true){
+                      //puts(); 
+                      sleep(2);
+                     }
+                 break;
+                }
 
-    case RANKING: {
-            if(show_ranking())
-                 puts(message_main[MAIN_ERROR_RANKING]); 
-            else puts("");
-                sleep(2);
-            break;
-            }
-  
-    case HISTORY: {
-            if(history_search()){
-                 puts(message_main[MAIN_ERROR_HISTORY]);
-                 sleep(2);}
-            break;
-            }
+    case PRINT_REPORT: {
+                 if(true){
+                      //puts(); 
+                      sleep(2);
+                     }
+                 break;
+                }
 
-    case DELETE: {
-            if(delete_user())
-                puts(message_main[MAIN_ERROR_DELETE]);
-            else puts(message_main[MAIN_SUCCESS_DELETE]);
-            sleep(2);
-            break;
-            }
-
-            
     case EXIT: {
-            game_on = false;
+            software_on = false;
             system("clear");
             break;
             }
@@ -119,7 +101,7 @@ switch(pick_user){
 
 }
 
-}while(game_on);
+}while(software_on);
 
 
 
